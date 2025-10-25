@@ -6,9 +6,9 @@
 /frontend/.env.test.local
 /frontend/.env.production.local
 
-# Ignore backend artifacts
-/backend/node_modules/
-/backend/.env
-/backend/logs/
-/backend/tmp/
-/backend/uploads/
+# Ignore api artifacts
+/api/node_modules/
+/api/.env
+/api/logs/
+/api/tmp/
+/api/uploads/
