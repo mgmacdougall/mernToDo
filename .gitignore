@@ -1,0 +1,14 @@
+# Ignore frontend artifacts
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Ignore backend artifacts
+/backend/node_modules/
+/backend/.env
+/backend/logs/
+/backend/tmp/
+/backend/uploads/
