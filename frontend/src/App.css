@@ -1,0 +1,11 @@
+.app-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.app-container *{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

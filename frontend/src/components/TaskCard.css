@@ -1,0 +1,17 @@
+.button-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+
+.button-group button {
+  padding: 8px 16px;
+  width: 2rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;}
