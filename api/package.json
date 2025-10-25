@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:start": "nodemon server.js",
+    "api:test": "newman run ./src/tests/api/Recipesv2.postman_collection.json -e ./src/tests/api/Recipesv2.postman_collection.json -r html,cli --reporter-html-export src/tests/api/reports/api-test-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.2",
+    "morgan": "^1.10.1",
+    "newman-reporter-html": "^1.0.5",
+    "nodemon": "^3.1.10",
+    "winston": "^3.18.3"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
