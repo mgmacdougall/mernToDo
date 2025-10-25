@@ -1,0 +1,22 @@
+.form-container {
+  max-width: 880px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#title{
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #0b0b0b;
+    padding: 10px;
+}
+
+#complete{
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #0b0b0b;
+    padding: 10px;
+}
