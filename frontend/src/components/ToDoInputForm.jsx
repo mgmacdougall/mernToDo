@@ -1,12 +1,18 @@
 import { useState } from "react";
+import "./ToDoInputForm.css";
+import "react-datepicker/dist/react-datepicker.css";
+
+import DatePicker from "react-datepicker";
+
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import "./ToDoInputForm.css";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+
 function ToDoInputForm({ handleToDoSubmit }) {
   const [title, setTitle] = useState("");
   const [completed, setCompleted] = useState(false);
+  const [dueDate, setDueDate] = useState(new Date());
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -43,6 +49,18 @@ function ToDoInputForm({ handleToDoSubmit }) {
               <option value={false}>False</option>
               <option value={true}>True</option>
             </select>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <label htmlFor="dueDate">Due Date:</label>
+            <DatePicker
+              id="dueDate"
+              selected={dueDate}
+              onChange={(date) => setDueDate(date)}
+              dateFormat="MMMM d, yyyy"
+              className="form-control"
+            />
           </Col>
         </Row>
         <Row className="mt-4">
