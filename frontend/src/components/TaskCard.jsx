@@ -37,14 +37,16 @@ function TaskCard({ task, onUpdate, onDelete }) {
       ) : (
         <div className="p-4">{/* <p>None edit state</p> */}</div>
       )}
-      <ButtonGroup aria-label="Basic example" className="me-2">
-        <Button variant="primary" onClick={handleEditClick}>
-          Edit
-        </Button>
-        <Button variant="danger" onClick={() => onDelete(task._id)}>
-          Delete
-        </Button>
-      </ButtonGroup>
+      <div className="d-flex justify-content-center align-items-center">
+        <div className="d-inline-flex flex-row gap-2">
+          <Button variant="primary" onClick={handleEditClick} size="lg">
+            Edit
+          </Button>
+          <Button variant="danger" onClick={() => onDelete(task._id)} size="lg">
+            Delete
+          </Button>
+        </div>
+      </div>
     </div>
   );
 }
