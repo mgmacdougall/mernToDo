@@ -26,6 +26,7 @@ function TaskCard({ task, onUpdate, onDelete }) {
           />
           <Button
             variant="primary"
+            className="d-block mx-auto my-3"
             onClick={() => {
               handleEditClick();
               onUpdate(task._id, { title: taskTitle });
