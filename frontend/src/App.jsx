@@ -23,6 +23,8 @@ function App() {
     console.log("Updating task:", id, updatedTask);
     await axios.put(`http://localhost:5000/task/${id}`, {
       title: updatedTask.title,
+      completed: updatedTask.completed,
+      dueDate: updatedTask.dueDate,
     });
     const updatedTasks = tasks.map((task) =>
       task._id === id ? { ...task, ...updatedTask } : task
